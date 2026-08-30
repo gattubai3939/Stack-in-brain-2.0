@@ -1,0 +1,17 @@
+{
+  "name": "Second Brain 2.0",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "postAttachCommand": "npm install && npm start",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Second Brain 2.0",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["src/App.tsx"]
+    }
+  }
+}
